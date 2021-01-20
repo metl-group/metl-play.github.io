@@ -1,5 +1,14 @@
-body {
-        background: #36393f;
+#container {
+            height: 500px;
+            width: 500px;
+            background-color: grey;
+            }
+
+html {
         font-family: Arial, Calibri;
-        font-color: white;
+        color: white;
+        }
+
+h1   {
+        color: purple
         }
