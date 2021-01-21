@@ -1,14 +1,9 @@
-#container {
-            height: 500px;
-            width: 500px;
-            background-color: grey;
-            }
 
-html {
+#html {
         font-family: Arial, Calibri;
-        color: white;
+        background: white;
         }
 
 h1   {
-        color: purple
+        color: purple;
         }

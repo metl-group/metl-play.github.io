@@ -1,8 +1,10 @@
-let colors = ['black', 'blue', 'brown'];
-let button = document.getElementById('button');
+let buttond = document.getElementById('buttond');
+let buttonw = document.getElementById('buttonw');
 
-button.addEventListener('click', function(){
-    var randomColor = colors[Math.floor(Math.random() * colors.length)]
-    let container = document.getElementById('container');
-    container.style.background = randomColor;
+buttond.addEventListener('click', function(){
+    html.style.background = '#36393f';
+})
+
+buttonw.addEventListener('click', function(){
+    html.style.background = 'white';
 })
