@@ -1,9 +1,43 @@
 
-#html {
-        font-family: Arial, Calibri;
-        background: white;
-        }
+html {
+      font-family:Arial, Calibri;
+      background:white;
+      color:grey;
+      margin:0;
+      padding:0;
+      }
+
+body {
+      margin:0;
+      padding:0;
+      height:2000px;
+      }
 
 h1   {
-        color: purple;
+      color:purple;
+      }
+
+nav {
+     width:100%;
+     height:50%;
+     position:fixed;
+     top:0px;
+     left:0px;
+     }
+
+nav ul {
+        margin:0;
+        padding:0;
         }
+
+nav ul li {
+           list-style:none;
+           margin:15px 15px 15px 15px;
+           width:150px
+           text-align:center;
+           float:left;
+           }
+
+a {
+   color:grey;
+   }

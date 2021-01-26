@@ -2,7 +2,9 @@
 <html id="html" lang="de">
   <head>
     <meta charset="utf-8">
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="js/menu.js"></script>
     <title>
       metl_play homepage
     </title>
@@ -14,9 +16,20 @@
         </h1>
     </center>
     <hr>
-    <!-- Theme Changer button -->
-  <button id="buttond">Darkmode</button>
-  <button id="buttonw">Whitemode</button>
-  <script src="js/style.js"></script>
+
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li>Darstellung
+          <ul>
+            <li><button id="buttond">Dunkles Design</button></li>
+            <li><button id="buttonw">Helles Design</button></li>
+            <script src="js/button.js"></script>
+          </ul>
+        </li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+
   </body>
 </html>
