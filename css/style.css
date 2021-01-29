@@ -1,8 +1,8 @@
 
-html {
+ html {
       font-family:Arial, Calibri;
       background:white;
-      color:grey;
+      color:#36393f;
       margin:0;
       padding:0;
       }
@@ -13,17 +13,16 @@ body {
       height:2000px;
       }
 
-h1   {
-      color:purple;
-      }
+h1, h4   {
+          color:#2d2d2d;
+          }
 
 nav {
      width:100%;
      height:50px;
-     position:fixed;
      top:0px;
      left:0px;
-     background:purple;
+     background:#d300d3;
      }
 
 nav ul {
@@ -32,18 +31,76 @@ nav ul {
         }
 
 nav ul li {
+           position:relative;
            list-style:none;
-           height:25;
+           height:25px;
            padding:15px 0px 10px 0px;
            width:150px;
            border-right:1px solid grey;
            text-align:center;
            float:left;
-           color:grey;
+           color:#e2e2e2;
            }
 
+nav ul li {
+           transition:all 300ms;
+           -moz-transition:all 300ms;
+           -ms-transition:all 300ms;
+           -o-transition:all 300ms;
+           -webkit-transition:all 300ms;
+           }
+
+nav ul li:hover {
+                 background:grey;
+                 }
+
 nav ul li a, nav ul li {
-                        color:grey;
+                        color:white;
                         text-decoration:none;
                         letter-spacing:1px;
                         }
+
+nav ul li ul {
+              position:absolute;
+              top:50px;
+              left:0px;
+              background:#d300d3;
+              display:none;
+              }
+
+nav ul li ul li {
+                 border-bottom:1px solid grey;
+                 }
+
+#buttond {
+          background-color:#d300d3;
+          position:relative;
+          top:-15px;
+          border:none;
+          width:100%;
+          height:50px;
+          font-size:16px;
+          color:#e2e2e2;
+
+         }
+
+#buttond:hover {
+                background-color:grey;
+                color:#2d2d2d;
+                }
+
+#buttonw {
+          background-color:#d300d3;
+          position:relative;
+          top:-15px;
+          border:none;
+          width:100%;
+          height:50px;
+          font-size:16px;
+          color:#e2e2e2;
+         }
+
+#buttonw:hover {
+                background-color:grey;
+                color:#2d2d2d;
+                }
