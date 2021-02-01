@@ -4,7 +4,7 @@ let buttonrgb = document.getElementById('buttonrgb');
 
 buttond.addEventListener('click', function(){
     html.style.background = '#36393f';
-    html.style.color = 'white';
+    html.style.color = '#2d2d2d';
 
     titel.style.color = '#e2e2e2';
     by.style.color = '#e2e2e2';
@@ -22,7 +22,7 @@ buttond.addEventListener('click', function(){
 })
 
 buttonw.addEventListener('click', function(){
-    html.style.background = 'white';
+    html.style.background = '#e2e2e2';
     html.style.color = '#36393f';
 
     titel.style.color = '#2d2d2d';
