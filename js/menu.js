@@ -1,4 +1,3 @@
-
 $(document).ready(function(e) {
 
         $('nav ul li').stop().hover(
