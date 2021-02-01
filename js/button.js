@@ -10,7 +10,7 @@ buttond.addEventListener('click', function(){
     navul1.style.background = 'purple';
     navul2.style.background = 'purple';
     conhead.style.color = '#e2e2e2';
-    content.style.color = '#e2e2e2';
+    con.style.color = '#e2e2e2';
 })
 
 buttonw.addEventListener('click', function(){
@@ -22,5 +22,5 @@ buttonw.addEventListener('click', function(){
     navul1.style.background = '#d300d3';
     navul2.style.background = '#d300d3';
     conhead.style.color = '#2d2d2d';
-    content.style.color = '#2d2d2d';
+    con.style.color = '#2d2d2d';
 })
