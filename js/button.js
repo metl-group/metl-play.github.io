@@ -9,9 +9,9 @@ buttond.addEventListener('click', function(){
     titel.style.color = '#e2e2e2';
     by.style.color = '#e2e2e2';
 
-    nav.style.background = 'purple';
-    navul1.style.background = 'purple';
-    navul2.style.background = 'purple';
+    nav.style.background = '#800080';
+    navul1.style.background = '#800080';
+    navul2.style.background = '#800080';
 
     conhead.style.color = '#e2e2e2';
     con.style.color = '#e2e2e2';
