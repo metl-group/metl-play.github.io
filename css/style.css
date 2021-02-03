@@ -55,21 +55,22 @@ nav ul li:hover {
                  }
 
 nav ul li a, nav ul li {
-                        color:white;
+                        color:#fff;
                         text-decoration:none;
                         letter-spacing:1px;
                         }
 
 nav ul li ul {
               position:absolute;
-              top:50px;
-              left:0px;
+              top:0px;
+              left:-1px;
               background:#d300d3;
               display:none;
               }
 
 nav ul li ul li {
                  border-bottom:1px solid grey;
+                 border-left:1px solid grey;
                  }
 
 #buttond {
@@ -121,3 +122,4 @@ nav ul li ul li {
                 background-color:grey;
                 color:#2d2d2d;
                 }
+
