@@ -10,8 +10,10 @@ buttond.addEventListener('click', function(){
     by.style.color = '#e2e2e2';
 
     nav.style.background = '#800080';
+    navul0.style.background = '#800080';
     navul1.style.background = '#800080';
     navul2.style.background = '#800080';
+
 
     conhead.style.color = '#e2e2e2';
     conlwrhead.style.color = '#e2e2e2';
@@ -31,8 +33,10 @@ buttonw.addEventListener('click', function(){
     by.style.color = '#2d2d2d';
 
     nav.style.background = '#d300d3';
+    navul0.style.background = '#d300d3';
     navul1.style.background = '#d300d3';
     navul2.style.background = '#d300d3';
+
 
     conhead.style.color = '#2d2d2d';
     conlwrhead.style.color = '#2d2d2d';
