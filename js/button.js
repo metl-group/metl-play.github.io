@@ -18,7 +18,7 @@ buttond.addEventListener('click', function(){
     con.style.color = '#e2e2e2';
     conlwr.style.color = '#e2e2e2';
 
-    buttond.style.background = 'purple';
+    buttond.style.background = 'violet';
     buttonw.style.background = 'purple';
     buttonrgb.style.background = 'purple';
 })
