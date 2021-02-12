@@ -73,24 +73,7 @@ nav ul li ul li {
                  border-left:1px solid grey;
                  }
 
-#buttond {
-          background-color:#d300d3;
-          position:relative;
-          top:-15px;
-          border:none;
-          width:100%;
-          height:50px;
-          font-size:16px;
-          color:#e2e2e2;
-
-         }
-
-#buttond:hover {
-                background-color:grey;
-                color:#2d2d2d;
-                }
-
-#buttonw {
+#btnd {
           background-color:#d300d3;
           position:relative;
           top:-15px;
@@ -101,12 +84,13 @@ nav ul li ul li {
           color:#e2e2e2;
          }
 
-#buttonw:hover {
+#btnd:hover {
                 background-color:grey;
                 color:#2d2d2d;
+                cursor:pointer;
                 }
 
-#buttonrgb {
+#btnw {
           background-color:#d300d3;
           position:relative;
           top:-15px;
@@ -117,10 +101,28 @@ nav ul li ul li {
           color:#e2e2e2;
          }
 
-#buttonrgb:hover {
+#btnw:hover {
                 background-color:grey;
                 color:#2d2d2d;
+                cursor:pointer;
                 }
+
+#btnrgb {
+          background-color:#d300d3;
+          position:relative;
+          top:-15px;
+          border:none;
+          width:100%;
+          height:50px;
+          font-size:16px;
+          color:#e2e2e2;
+         }
+
+#btnrgb:hover {
+               background-color:grey;
+               color:#2d2d2d;
+               cursor:pointer;
+               }
 
 #con1 {
        text-align:left;

@@ -1,8 +1,8 @@
-let buttond = document.getElementById('btnd');
-let buttonw = document.getElementById('btnw');
-let buttonrgb = document.getElementById('btnrgb');
+let d = document.getElementById('btnd');
+let w = document.getElementById('btnw');
+let rgb = document.getElementById('btnrgb');
 
-buttond.addEventListener('click', function(){
+d.addEventListener('click', function(){
     html.style.background = '#36393f';
     html.style.color = '#2d2d2d';
 
@@ -20,12 +20,12 @@ buttond.addEventListener('click', function(){
     con.style.color = '#e2e2e2';
     conlwr.style.color = '#e2e2e2';
 
-    buttond.style.background = '#800080';
-    buttonw.style.background = '#800080';
-    buttonrgb.style.background = '#800080';
+    btnd.style.background = '#800080';
+    btnw.style.background = '#800080';
+    btnrgb.style.background = '#800080';
 })
 
-buttonw.addEventListener('click', function(){
+w.addEventListener('click', function(){
     html.style.background = '#e2e2e2';
     html.style.color = '#36393f';
 
@@ -43,11 +43,12 @@ buttonw.addEventListener('click', function(){
     con.style.color = '#2d2d2d';
     conlwr.style.color = '#2d2d2d';
 
-    buttond.style.background = '#d300d3';
-    buttonw.style.background = '#d300d3';
-    buttonrgb.style.background = '#d300d3';
+    btnd.style.background = '#d300d3';
+    btnw.style.background = '#d300d3';
+    btnrgb.style.background = '#d300d3';
 })
 
-buttonrgb.addEventListener('click', function(){
+rgb.addEventListener('click', function(){
 /*Placeholder for another 'Design' Button with id=buttonrgb*/
+;
 })
