@@ -1,6 +1,6 @@
-let buttond = document.getElementById('buttond');
-let buttonw = document.getElementById('buttonw');
-let buttonrgb = document.getElementById('buttonrgb');
+let buttond = document.getElementById('btnd');
+let buttonw = document.getElementById('btnw');
+let buttonrgb = document.getElementById('btnrgb');
 
 buttond.addEventListener('click', function(){
     html.style.background = '#36393f';
