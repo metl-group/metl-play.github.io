@@ -1,6 +1,5 @@
 let d = document.getElementById('btnd');
 let w = document.getElementById('btnw');
-let rgb = document.getElementById('btnrgb');
 
 d.addEventListener('click', function(){
     html.style.background = '#36393f';
@@ -46,7 +45,9 @@ w.addEventListener('click', function(){
     conlwr.style.color = '#2d2d2d';
 })
 
+/*
 rgb.addEventListener('click', function(){
-/*Placeholder for another 'Design' Button with id=buttonrgb*/
+Placeholder for another 'Design' Button with id=buttonrgb
 ;
 })
+*/
