@@ -44,5 +44,6 @@ var checkDead = setInterval(function(){
         block1.style.display = "none";
         block2.style.display = "none";
         alert("u lose. Score: " + count);
+        count = "none";
     }
 },10);
