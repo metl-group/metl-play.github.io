@@ -6,7 +6,7 @@ function lemath()
 {
     count++;
     var counter = document.getElementById('counter');
-    counter.innerHTML = "Counter: " + count;
+    counter.innerHTML = "Counter: " + (count -1);
 }
 
 function begin()
@@ -43,7 +43,7 @@ var checkDead = setInterval(function(){
         block.style.display = "none";
         block1.style.display = "none";
         block2.style.display = "none";
-        alert("u lose. Score: " + count);
+        alert("u lose. Score: " + (count -1));
         count = "none";
     }
 },10);
