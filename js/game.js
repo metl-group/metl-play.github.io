@@ -20,7 +20,11 @@ var checkDead = setInterval(function(){
     if(blockLeft<20 && blockLeft>0 &&
     characterTop>=130){
         block.style.animation = "none";
+        block1.style.animation = "none";
+        block2.style.animation = "none";
         block.style.display = "none";
+        block1.style.display = "none";
+        block2.style.display = "none";
         alert("u lose.");
     }
 },10);

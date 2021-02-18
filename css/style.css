@@ -156,7 +156,10 @@ nav ul li ul li {
 #game {
        width:500px;
        height:200px;
+       background-color:grey;
        border:1px solid black;
+       position:absolute;
+       z-index:1;
        }
 
 #character {
@@ -165,6 +168,7 @@ nav ul li ul li {
             background-color:red;
             position:relative;
             top:150px;
+            z-index:5;
             }
 .animate{
          animation:jump 500ms;
@@ -181,25 +185,42 @@ nav ul li ul li {
         height:20px;
         background-color:blue;
         position:relative;
-        top:130px;
+        top:90px;
         left:480px;
         animation:block 1s infinite linear;
+        z-index:4;
         }
 @keyframes block {
                   0%{left:480px;}
-                  100%{left:0px;}
+                  100%{left:-40px;}
                   }
 
-#block {
-        width:20px;
+#block1 {
+        width:40px;
         height:20px;
-        background-color:blue;
+        background-color:green;
         position:relative;
-        top:130px;
+        top:110px;
         left:480px;
-        animation:block 1s infinite linear;
+        animation:block 900ms infinite linear;
+        z-index:3;
         }
-@keyframes block {
+@keyframes block1 {
                   0%{left:480px;}
-                  100%{left:0px;}
+                  100%{left:-40px;}
+                  }
+
+#block2 {
+        width:40px;
+        height:20px;
+        background-color:white;
+        position:relative;
+        top:-20px;
+        left:460px;
+        animation:block 1500ms infinite linear;
+        z-index:2;
+        }
+@keyframes block2 {
+                  0%{left:480px;}
+                  100%{left:-40px;}
                   }
