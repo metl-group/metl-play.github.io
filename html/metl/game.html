@@ -42,33 +42,31 @@
             </li>
             <li><a href="../kontakt/kontakt.html">Kontakt</a></li>
         </ul>
-    </nav><br><br><br><br><br><br><br>
+    </nav><br>
     <div id="con1">
-        <h1 id="conhead"></h1>
+        <h1 id="conhead">Simple Game</h1>
         <p id="con">
-
-        </p>
-    </div>
-
-    <div id="con2">
-        <h1 id="conlwrhead">Simple Game</h1>
-        <p id="conlwr">
             !Updates will come!<br>
             How to play:<br>
             1. Click in the Box to jump<br>
             2. Blue is an obstacle you have to avoid<br>
             3. If you lose press F5 to restart<br>
         </p>
+        <div id="game" onclick="jump()">
+            <div id="character"></div>
+            <div id="block2"></div>
+            <div id="block1"></div>
+            <div id="block"></div>
+        </div>
     </div>
-
-    <div id="game" onclick="jump()">
-        <div id="character"></div>
-        <div id="block2"></div>
-        <div id="block1"></div>
-        <div id="block"></div>
-    </div>
-
     <script src="../../js/game.js"></script>
+    <div id="con2">
+        <h1 id="conlwrhead"></h1>
+        <p id="conlwr">
+        </p>
+    </div>
+
+
 
     </body>
 </html>
