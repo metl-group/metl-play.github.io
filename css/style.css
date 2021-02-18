@@ -168,6 +168,7 @@ nav ul li ul li {
             background-image:url("../img/character.png");
             position:relative;
             top:150px;
+            left:10px;
             z-index:5;
             }
 .animate{
