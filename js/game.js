@@ -1,5 +1,23 @@
 var character = document.getElementById("character");
 var block = document.getElementById("block");
+var count = 0;
+
+function lemath()
+{
+    count++;
+    var counter = document.getElementById('counter');
+    counter.innerHTML = "Counter: " + count;
+}
+
+function begin()
+{
+    lemath();
+    setTimeout(begin, 1000, window);
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    begin();
+});
 
 function jump(){
     if(character.classList != "animate"){
@@ -25,6 +43,6 @@ var checkDead = setInterval(function(){
         block.style.display = "none";
         block1.style.display = "none";
         block2.style.display = "none";
-        alert("u lose.");
+        alert("u lose. Score: " + count);
     }
 },10);
