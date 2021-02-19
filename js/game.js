@@ -22,12 +22,10 @@ document.addEventListener('DOMContentLoaded', function () {
 function jump(){
     if(character.classList != "animate"){
         character.classList.add("animate");
-    }
-    setTimeout(function(){
+        setTimeout(function(){
         character.classList.remove("animate");
-    },500);
+    },500);}
 }
-
 
 var checkDead = setInterval(function(){
     var characterTop =
