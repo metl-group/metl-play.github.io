@@ -42,7 +42,7 @@ var checkDead = setInterval(function(){
         block.style.display = "none";
         block1.style.display = "none";
         block2.style.display = "none";
-        alert("u lose. Score: " + (count -1));
+        alert("G4m3 0ver Score: " + (count -1));
         count = "none";
     }
 },10);
