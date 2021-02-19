@@ -6,7 +6,7 @@ function lemath()
 {
     count++;
     var counter = document.getElementById('counter');
-    counter.innerHTML = "Counter: " + (count -1);
+    counter.innerHTML = "Score: " + (count -1);
 }
 
 function begin()
