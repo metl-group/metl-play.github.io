@@ -174,10 +174,26 @@ nav ul li ul li {
          animation:jump 500ms;
          }
 @keyframes jump{
-                0%{top:150px;}
-                30%{top:100px;}
-                70%{top:100px;}
-                100%{top:150px;}
+                0%{top:150px;
+                   left:10px;}
+                20%{top:120px;
+                    left:15px;}
+                30%{top:110px;
+                    left:20px;}
+                45%{top:100px;
+                    left:25px;}
+                55%{top:100px;
+                    left:25px;}
+                70%{top:110px;
+                    left:25px;}
+                80%{top:120px;
+                    left:25px;}
+                85%{top:120px;
+                    left:25px;}
+                95%{top:150px;
+                     left:20px;}
+                100%{top:150px;
+                     left:15px;}
                 }
 
 #block {
