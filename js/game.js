@@ -1,6 +1,6 @@
 var character = document.getElementById("character");
 var block = document.getElementById("block");
-var scri = document.getElementById("scr01");
+var scri = document.getElementById("scr01") && document.getElementById("html");
 var img = new Image();
 var count = 0;
 
