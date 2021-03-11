@@ -4,18 +4,16 @@ var img = new Image();
 var count = 0;
 var t;
 
-function lemath()
-{
+function lemath(){
     count++;
     var counter = document.getElementById('counter');
     counter.innerHTML = "Score: " + (count -1);
-}
+};
 
-function begin()
-{
+function begin(){
     lemath();
     t=setTimeout(begin, 950, window);
-}
+};
 
 document.addEventListener('DOMContentLoaded', function () {
     begin();
@@ -27,7 +25,9 @@ function jump(){
         setTimeout(function(){
         character.classList.remove("animate");
 },500);}
-}
+};
+
+//funktion
 
 var checkDead = setInterval(function(){
 
