@@ -138,7 +138,7 @@ nav ul li ul li {
 #game {
        width:500px;
        height:200px;
-       background-image:url("../img/background01.png");
+       background-image:url("/img/background01.png");
        border:1px solid black;
        position:absolute;
        z-index:1;
@@ -147,7 +147,7 @@ nav ul li ul li {
 #character {
             width:20px;
             height:50px;
-            background-image:url("../img/character01.gif");
+            background-image:url("/img/character01.gif");
             position:relative;
             top:150px;
             left:10px;
@@ -184,7 +184,7 @@ nav ul li ul li {
 #block {
         width:20px;
         height:20px;
-        background-image:url("../img/enemy01.png");
+        background-image:url("/img/enemy01.png");
         position:relative;
         top:90px;
         left:480px;
@@ -200,7 +200,7 @@ nav ul li ul li {
 #block1 {
         width:40px;
         height:20px;
-        background-image:url("../img/bush.png");
+        background-image:url("/img/bush.png");
         position:relative;
         top:110px;
         left:480px;
@@ -216,7 +216,7 @@ nav ul li ul li {
 #block2 {
         width:40px;
         height:20px;
-        background-image:url("../img/cloud01.png");
+        background-image:url("/img/cloud01.png");
         position:relative;
         top:-20px;
         left:460px;
