@@ -15,10 +15,9 @@ function begin(){
     t=setTimeout(begin, 950, window);
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    setTimeout(10000);
+document.addEventListener('DOMContentLoaded', function (){
     begin();
-})
+});
 
 function jump(){
     if(character.classList != "animate"){
@@ -28,7 +27,7 @@ function jump(){
 },500);}
 }
 
-//funktion
+//function background
 
 var checkDead = setInterval(function(){
 
