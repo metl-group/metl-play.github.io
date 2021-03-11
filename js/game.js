@@ -26,16 +26,14 @@ function jump(){
         character.classList.add("animate");
         setTimeout(function(){
         character.classList.remove("animate");
-    },500);}
+},500);}
 }
 
 var checkDead = setInterval(function(){
-    var characterTop =
-    parseInt(window.getComputedStyle(character).
-    getPropertyValue("top"));
-    var blockLeft =
-    parseInt(window.getComputedStyle(block).
-    getPropertyValue("left"));
+
+    var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+    var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
+
     if(blockLeft<20 && blockLeft>0 &&
     characterTop>=130){
         block.style.animation = "none";
@@ -47,7 +45,7 @@ var checkDead = setInterval(function(){
         character.innerHTML += '<img src="'+img.src+'" />';
         alert("G4m3 0ver Score: " + (count -1));
         clearTimeout(t);
-    }
+}
 },10);
 
 img.src = '/img/character01.png';
