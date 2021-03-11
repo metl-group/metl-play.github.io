@@ -15,7 +15,7 @@ function begin(){
     t=setTimeout(begin, 950, window);
 }
 
-document.addEventListener('DOMContentLoaded', function (){
+document.addEventListener('DOMContentLoaded' && setTimeout(10000), function (){
     begin();
 });
 
