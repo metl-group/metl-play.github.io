@@ -1,8 +1,8 @@
 var character = document.getElementById("character");
 var block = document.getElementById("block");
-var scri = document.getElementById("scr01") && document.getElementById("counter");
 var img = new Image();
 var count = 0;
+var t;
 
 function lemath()
 {
@@ -14,7 +14,7 @@ function lemath()
 function begin()
 {
     lemath();
-    setTimeout(begin, 950, window);
+    t=setTimeout(begin, 950, window);
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -46,8 +46,8 @@ var checkDead = setInterval(function(){
         block2.style.display = "none";
         character.innerHTML += '<img src="'+img.src+'" />';
         alert("G4m3 0ver Score: " + (count -1));
+        clearTimeout(t);
         count = "none";
-        scri.remove();
     }
 },10);
 
