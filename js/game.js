@@ -4,10 +4,6 @@ var img = new Image();
 var count = 0;
 var t;
 
-function load(){
-setTimeout(10000);
-}
-
 function lemath(){
     count++;
     var counter = document.getElementById('counter');
@@ -20,7 +16,7 @@ function begin(){
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    begin();
+    begin(10000);
 })
 
 function jump(){
