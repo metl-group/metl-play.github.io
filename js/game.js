@@ -1,6 +1,6 @@
 var character = document.getElementById("character");
 var block = document.getElementById("block");
-var scri = document.getElementById("scr01")
+var scri = document.getElementById("counter")
 var img = new Image();
 var count = 0;
 
@@ -14,7 +14,7 @@ function lemath()
 function begin()
 {
     lemath();
-    setTimeout(begin, 1000, window);
+    setTimeout(begin, 950, window);
 }
 
 document.addEventListener('DOMContentLoaded', function () {
