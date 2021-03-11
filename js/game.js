@@ -1,5 +1,6 @@
 var character = document.getElementById("character");
 var block = document.getElementById("block");
+var img = new Image();
 var count = 0;
 
 function lemath()
@@ -42,7 +43,12 @@ var checkDead = setInterval(function(){
         block.style.display = "none";
         block1.style.display = "none";
         block2.style.display = "none";
+        character.innerHTML += '<img src="'+img.src+'" />';
         alert("G4m3 0ver Score: " + (count -1));
         count = "none";
     }
 },10);
+
+img.src = 'img/character01.png';
+
+//Simple Game Textures made by https://www.youtube.com/channel/UC5fF703FjcwwxauExxyCYSA and edited by me(metl_play).
