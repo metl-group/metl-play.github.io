@@ -1,22 +1,25 @@
 let d = document.getElementById('btnd');
 let w = document.getElementById('btnw');
-var wht = '#e2e2e2';
-var blk = '#2d2d2d';
+var wht = '#e2e2e2'; //white
+var blk = '#2d2d2d'; //black
+var prp = '#800080'; //purple
+var lil = '#d300d3'; // lila
+var dc = '#36393f'; //Discord Dark Theme color
 
-d.addEventListener('click', function(){
-    html.style.background = '#36393f';
+d.addEventListener('click', function(){ //dunkles design button
+    html.style.background = dc;
     html.style.color = blk;
 
     titel.style.color = wht;
     by.style.color = wht;
 
-    btnd.style.background = '#800080';
-    btnw.style.background = '#800080';
+    btnd.style.background = prp;
+    btnw.style.background = prp;
 
-    nav.style.background = '#800080';
-    navul0.style.background = '#800080';
-    navul1.style.background = '#800080';
-    navul2.style.background = '#800080';
+    nav.style.background = prp;
+    navul0.style.background = prp;
+    navul1.style.background = prp;
+    navul2.style.background = prp;
 
     conhead.style.color = wht;
     con.style.color = wht;
@@ -28,20 +31,20 @@ d.addEventListener('click', function(){
     conlwr.style.color = wht;
 })
 
-w.addEventListener('click', function(){
+w.addEventListener('click', function(){ //helles design button
     html.style.background = wht;
-    html.style.color = '#36393f';
+    html.style.color = dc;
 
     titel.style.color = blk;
     by.style.color = blk;
 
-    btnd.style.background = '#d300d3';
-    btnw.style.background = '#d300d3';
+    btnd.style.background = lil;
+    btnw.style.background = lil;
 
-    nav.style.background = '#d300d3';
-    navul0.style.background = '#d300d3';
-    navul1.style.background = '#d300d3';
-    navul2.style.background = '#d300d3';
+    nav.style.background = lil;
+    navul0.style.background = lil;
+    navul1.style.background = lil;
+    navul2.style.background = lil;
 
     conhead.style.color = blk;
     con.style.color = blk;
