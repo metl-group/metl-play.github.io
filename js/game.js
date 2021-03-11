@@ -16,7 +16,8 @@ function begin(){
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    begin(10000);
+    setTimeout(10000);
+    begin();
 })
 
 function jump(){
