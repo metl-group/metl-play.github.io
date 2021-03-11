@@ -4,6 +4,8 @@ var img = new Image();
 var count = 0;
 var t;
 
+setTimeout(10000);
+
 function lemath(){
     count++;
     var counter = document.getElementById('counter');
