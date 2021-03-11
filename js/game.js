@@ -1,5 +1,6 @@
 var character = document.getElementById("character");
 var block = document.getElementById("block");
+var scri = document.getElementById("scr01")
 var img = new Image();
 var count = 0;
 
@@ -46,6 +47,7 @@ var checkDead = setInterval(function(){
         character.innerHTML += '<img src="'+img.src+'" />';
         alert("G4m3 0ver Score: " + (count -1));
         count = "none";
+        scri.remove();
     }
 },10);
 
