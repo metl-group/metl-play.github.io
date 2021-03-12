@@ -42,8 +42,7 @@ var checkDead = setInterval(function(){
 		character.innerHTML += '<img src="'+img.src+'" />';
 		alert("G4m3 0ver Score: " + (count -1));
 		clearTimeout(t);
-		count = 0;
-		document.getElementById('counter').count = count;
+		document.getElementById('counter').count = 0;
 }
 },10);
 
