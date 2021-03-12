@@ -39,8 +39,9 @@ var checkDead = setInterval(function(){
 		block.style.display = "none";
 		block1.style.display = "none";
 		block2.style.display = "none";
+		character.style.display = "none";
 		character.innerHTML += '<img src="'+img.src+'" />';
-		if(count>0){
+		if(count >= 1){
 		alert("G4m3 0ver Score: " + (count -1));
 		}
 		clearTimeout(t);
