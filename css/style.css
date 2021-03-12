@@ -123,6 +123,30 @@ nav ul li ul li {
        height:auto;
        }
 
+#con3{
+      text-align:left;
+      float:left;
+      padding:15px;
+      width:30%;
+      height:auto;
+}
+
+#con4{
+      text-align:left;
+      float:left;
+      padding:15px;
+      width:30%;
+      height:auto;
+}
+
+#con5{
+	text-align:left;
+	float:left;
+	padding:15px;
+	width:5%;
+	height:auto;
+}
+
 #img01 {
         width:30%;
         float:right;
@@ -138,7 +162,7 @@ nav ul li ul li {
 #game {
        width:500px;
        height:200px;
-       background-image:url("/img/background01.png");
+       background-image:url("/textures/background01.jpg");
        border:1px solid black;
        position:absolute;
        z-index:1;
@@ -147,7 +171,6 @@ nav ul li ul li {
 #character {
             width:20px;
             height:50px;
-            background-image:url("/img/character01.gif");
             position:relative;
             top:150px;
             left:10px;
@@ -184,7 +207,7 @@ nav ul li ul li {
 #block {
         width:20px;
         height:20px;
-        background-image:url("/img/enemy01.png");
+        background-image:url("/textures/enemy01.png");
         position:relative;
         top:90px;
         left:480px;
@@ -200,11 +223,11 @@ nav ul li ul li {
 #block1 {
         width:40px;
         height:20px;
-        background-image:url("/img/bush01.png");
+        background-image:url("/textures/bush01.png");
         position:relative;
         top:110px;
         left:480px;
-        animation:block 900ms infinite linear;
+        animation:block 1800ms infinite linear;
         z-index:3;
         }
 
@@ -216,11 +239,11 @@ nav ul li ul li {
 #block2 {
         width:40px;
         height:20px;
-        background-image:url("/img/cloud01.png");
+        background-image:url("/textures/cloud01.png");
         position:relative;
         top:-20px;
         left:460px;
-        animation:block 1500ms infinite linear;
+        animation:block 1400ms infinite linear;
         z-index:2;
         }
 @keyframes block2 {
