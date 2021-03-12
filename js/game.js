@@ -3,6 +3,7 @@ var block = document.getElementById("block");
 var img = new Image();
 var count = 0;
 var t;
+var ded = new Audio("/audio/death.ogg")
 
 function lemath(){
 	count++;
@@ -33,6 +34,7 @@ var checkDead = setInterval(function(){
 	var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
 
 	if(blockLeft<20 && blockLeft>0 && characterTop>=130){
+		ded.play();
 		block.style.animation = "none";
 		block1.style.animation = "none";
 		block2.style.animation = "none";
