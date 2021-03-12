@@ -12,7 +12,7 @@ function lemath(){
 
 function begin(){
 	lemath();
-	t=setTimeout(begin, 980, window);
+	t=setTimeout(begin, 990, window);
 }
 
 document.addEventListener('DOMContentLoaded', function (){
@@ -44,7 +44,7 @@ var checkDead = setInterval(function(){
 		alert("G4m3 0ver Score: " + (count -1));
 		}
 		clearTimeout(t);
-		counter.innerHTML = "Score: " + (count = 0);
+		counter.innerHTML = "*ded* with a Score of: " + (count -1);
 }
 },10);
 
