@@ -15,10 +15,12 @@ function begin(){
 	t=setTimeout(begin, 950, window);
 }
 
-document.addEventListener('DOMContentLoaded' & if t=5, function (){
+document.addEventListener('DOMContentLoaded', function (){
+	if(t=10){
 	count = 0;
 	begin();
-});
+}
+})
 
 function jump(){
 	if(character.classList != "animate"){
