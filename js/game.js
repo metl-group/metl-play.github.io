@@ -15,7 +15,7 @@ function begin(){
 	t=setTimeout(begin, 950, window);
 }
 
-document.addEventListener('DOMContentLoaded' && t=5, function (){
+document.addEventListener('DOMContentLoaded', function (){
 	begin();
 });
 
@@ -26,8 +26,6 @@ function jump(){
 				character.classList.remove("animate");
 },500);}
 }
-
-//function background
 
 var checkDead = setInterval(function(){
 
