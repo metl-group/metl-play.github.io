@@ -12,7 +12,7 @@ function lemath(){
 
 function begin(){
 	lemath();
-	t=setTimeout(begin, 950, window);
+	t=setTimeout(begin, 980, window);
 }
 
 document.addEventListener('DOMContentLoaded', function (){
