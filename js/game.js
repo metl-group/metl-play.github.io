@@ -16,7 +16,7 @@ function begin(){
 }
 
 document.addEventListener('DOMContentLoaded' & t=5, function (){
-	clearTimeout(t);
+	count = 0;
 	begin();
 });
 
