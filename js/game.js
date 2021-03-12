@@ -16,10 +16,7 @@ function begin(){
 }
 
 document.addEventListener('DOMContentLoaded', function (){
-	if(t=10){
-	count = 0;
 	begin();
-}
 })
 
 function jump(){
@@ -45,6 +42,7 @@ var checkDead = setInterval(function(){
 		character.innerHTML += '<img src="'+img.src+'" />';
 		alert("G4m3 0ver Score: " + (count -1));
 		clearTimeout(t);
+		count = 0;
 }
 },10);
 
