@@ -25,27 +25,13 @@ function lemath() {
 }
 
 function score(){
-  if ((count - 1) == 10) {
-    lvup.play();
-  }
-  if ((count - 1) == 20) {
-    lvup.play();
-  }
-  if ((count - 1) == 50) {
-    lvup.play();
-  }
-  if ((count - 1) == 100) {
-    lvup.play();
-  }
-  if ((count - 1) == 200) {
-    lvup.play();
-  }
-  if ((count - 1) == 500) {
-    lvup.play();
-  }
-  if ((count - 1) == 666) {
-    haunted.play();
-  }
+  if ((count - 1) == 10) lvup.play();
+  if ((count - 1) == 20) lvup.play();
+  if ((count - 1) == 50) lvup.play();
+  if ((count - 1) == 100) lvup.play();
+  if ((count - 1) == 200) lvup.play();
+  if ((count - 1) == 500) lvup.play();
+  if ((count - 1) == 666) haunted.play();
 }
 
 function jump() {
@@ -69,6 +55,7 @@ var checkDead = setInterval(function () {
   var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue('left'));
   var blockRight = parseInt(window.getComputedStyle(block).getPropertyValue('right'));
   if ((blockLeft < 20 && blockLeft > 0 || blockRight < 20 && blockRight > 0) && characterTop >= 130) {
+    canceljump = true;
     runchar.muted = true;
     bkmsc.muted = true;
     lnd.muted = true;
@@ -78,7 +65,6 @@ var checkDead = setInterval(function () {
     block.style.display = 'none';
     block1.style.display = 'none';
     block2.style.display = 'none';
-    canceljump = true;
     character.innerHTML = '<img src="' + img.src + '" />';
     if ((count - 1) > 0) {
       ded.play();
