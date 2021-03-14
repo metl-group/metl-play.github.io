@@ -10,7 +10,7 @@ var jmp = new Audio('/audio/jump.ogg');
 var lnd = new Audio('/audio/land.ogg');
 var lvup = new Audio('/audio/levelup.ogg');
 var haunted = new Audio('/audio/growl4.ogg');
-var bkmsc = new Audio('/audio/calm1.ogg');
+var bkmsc = new Audio('/audio/pigstep.ogg');
 
 //starter
 document.addEventListener('DOMContentLoaded', function () {
@@ -37,7 +37,7 @@ function sound() {
   ded.volume = 0.5;
   lvup.volume = 0.5;
   clkalert.volume = 0.8;
-  bkmsc.volume = 0.7;
+  bkmsc.volume = 0.3;
   //sounds to play from start of Game
   runchar.play();
   bkmsc.play();
