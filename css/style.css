@@ -269,7 +269,7 @@ nav ul li ul li {
   position: relative;
   top: -20px;
   left: 460px;
-  animation: block 1400ms infinite linear;
+  animation: block 2000ms infinite linear;
   z-index: 2;
 }
 
