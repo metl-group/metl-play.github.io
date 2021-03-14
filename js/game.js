@@ -5,7 +5,6 @@ var count = 0;
 var t;
 var canceljump = false;
 
-
 //starter
 document.addEventListener('DOMContentLoaded', function () {
   sound();
@@ -25,26 +24,24 @@ function lemath() {
 }
 
 function score(){
-  if ((count - 1) == 10) lvup.play();
-  if ((count - 1) == 20) lvup.play();
-  if ((count - 1) == 50) lvup.play();
-  if ((count - 1) == 100) lvup.play();
-  if ((count - 1) == 200) lvup.play();
-  if ((count - 1) == 500) lvup.play();
-  if ((count - 1) == 666) haunted.play();
+  if ((count - 1) == 10) sound(lvup.play());
+  if ((count - 1) == 20) sound(lvup.play());
+  if ((count - 1) == 50) sound(lvup.play());
+  if ((count - 1) == 100) sound(lvup.play());
+  if ((count - 1) == 200) sound(lvup.play());
+  if ((count - 1) == 500) sound(lvup.play());
+  if ((count - 1) == 666) sound(haunted.play());
 }
 
 function jump() {
 	if(canceljump){
-		return;
+		return
 	}
   if (character.classList != 'animate') {
     character.classList.add('animate');
-    character.innerHTML.add = '<img src="' + img.src + '" />';
     jmp.play();
     setTimeout(function () {
       character.classList.remove('animate');
-      character.innerHTML.remove = '<img src="' + img.src + '" />';
       lnd.play();
     }, 500);
   }

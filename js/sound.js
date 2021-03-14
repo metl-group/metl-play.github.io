@@ -8,26 +8,26 @@ var haunted = new Audio('/audio/growl4.ogg');
 var bkmsc = new Audio('/audio/pigstep.ogg');
 
 function sound() {
-              //preload the sounds
-              runchar.preload;
-              jmp.preload;
-              lnd.preload;
-              clkalert.preload;
-              ded.preload;
-              lvup.preload;
-              haunted.preload;
-              bkmsc.preload;
-              //looped sounds need to get muted and loop set to false like runchar
-              runchar.loop = true;
-              bkmsc.loop = true;
-              //adjust the individual sound volume
-              jmp.volume = 0.1;
-              lnd.volume = 0.3;
-              ded.volume = 0.5;
-              lvup.volume = 0.5;
-              clkalert.volume = 0.8;
-              bkmsc.volume = 0.2;
-              //sounds to play from start of Game
-              runchar.play();
-              bkmsc.play();
-            }
+  //preload the sounds
+  runchar.preload;
+  jmp.preload;
+  lnd.preload;
+  clkalert.preload;
+  ded.preload;
+  lvup.preload;
+  haunted.preload;
+  bkmsc.preload;
+  //looped sounds need to get muted and loop set to false like runchar
+  runchar.loop = true;
+  bkmsc.loop = true;
+  //adjust the individual sound volume
+  jmp.volume = 0.1;
+  lnd.volume = 0.3;
+  ded.volume = 0.5;
+  lvup.volume = 0.5;
+  clkalert.volume = 0.8;
+  bkmsc.volume = 0.2;
+  //sounds to play from start of Game
+  runchar.play();
+  bkmsc.play();
+}
