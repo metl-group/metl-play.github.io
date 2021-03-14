@@ -3,55 +3,28 @@ var block = document.getElementById('block');
 var img = new Image();
 var count = 0;
 var t;
-var ded = new Audio('/audio/death.ogg');
-var runchar = new Audio('/audio/grass2.ogg');
-var clkalert = new Audio('/audio/wood_click.ogg');
-var jmp = new Audio('/audio/jump.ogg');
-var lnd = new Audio('/audio/land.ogg');
-var lvup = new Audio('/audio/levelup.ogg');
-var haunted = new Audio('/audio/growl4.ogg');
-var bkmsc = new Audio('/audio/pigstep.ogg');
+var canceljump = false;
+
 
 //starter
 document.addEventListener('DOMContentLoaded', function () {
-  begin();
   sound();
+  achivement();
 })
 
-function sound() {
-  //preload the sounds
-  runchar.preload;
-  jmp.preload;
-  lnd.preload;
-  clkalert.preload;
-  ded.preload;
-  lvup.preload;
-  haunted.preload;
-  bkmsc.preload;
-  //looped sounds need to get muted and loop set to false like runchar
-  runchar.loop = true;
-  bkmsc.loop = true;
-  //adjust the individual sound volume
-  jmp.volume = 0.1;
-  lnd.volume = 0.1;
-  ded.volume = 0.5;
-  lvup.volume = 0.5;
-  clkalert.volume = 0.8;
-  bkmsc.volume = 0.3;
-  //sounds to play from start of Game
-  runchar.play();
-  bkmsc.play();
-}
-
-function begin() {
+function achivement() {
   lemath();
-  t = setTimeout(begin, 995, window);
+  t = setTimeout(achivement, 1000, window);
+  score();
 }
 
 function lemath() {
   count++;
   var counter = document.getElementById('counter');
   counter.innerHTML = 'Score: ' + (count - 1);
+}
+
+function score(){
   if ((count - 1) == 10) {
     lvup.play();
   }
@@ -76,11 +49,16 @@ function lemath() {
 }
 
 function jump() {
+	if(canceljump){
+		return;
+	}
   if (character.classList != 'animate') {
     character.classList.add('animate');
-    //jmp.play();
+    character.innerHTML.add = '<img src="' + img.src + '" />';
+    jmp.play();
     setTimeout(function () {
       character.classList.remove('animate');
+      character.innerHTML.remove = '<img src="' + img.src + '" />';
       lnd.play();
     }, 500);
   }
@@ -89,15 +67,18 @@ function jump() {
 var checkDead = setInterval(function () {
   var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue('top'));
   var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue('left'));
-  if (blockLeft < 20 && blockLeft > 0 && characterTop >= 130) {
+  var blockRight = parseInt(window.getComputedStyle(block).getPropertyValue('right'));
+  if ((blockLeft < 20 && blockLeft > 0 || blockRight < 20 && blockRight > 0) && characterTop >= 130) {
     runchar.muted = true;
     bkmsc.muted = true;
+    lnd.muted = true;
     block.style.animation = 'none';
     block1.style.animation = 'none';
     block2.style.animation = 'none';
     block.style.display = 'none';
     block1.style.display = 'none';
     block2.style.display = 'none';
+    canceljump = true;
     character.innerHTML = '<img src="' + img.src + '" />';
     if ((count - 1) > 0) {
       ded.play();
