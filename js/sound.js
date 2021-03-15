@@ -27,7 +27,4 @@ function sound() {
   lvup.volume = 0.5;
   clkalert.volume = 0.8;
   bkmsc.volume = 0.2;
-  //sounds to play from start of Game
-  runchar.play();
-  bkmsc.play();
 }
