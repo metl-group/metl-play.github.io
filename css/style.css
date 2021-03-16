@@ -158,34 +158,18 @@ nav ul li ul li {
 }
 
 @media (prefers-color-scheme: dark) {
-	html {
-  background: #36393f;
-  color: ##2d2d2d;
-	}
-
-	h1,h4 {
-  color: #e2e2e2;
-	}
-
-	nav {
-  background: #800080;
-	}
-
-	nav ul li {
+  #html {
+  background-color: #36393f;
   color: #2d2d2d;
-	}
+  }
 
-	nav ul li:hover {
-  background: #800080;
-	}
+  #titel, #by, #conhead, #con, #concon, #qoute, #conlwrhead, #conlwr {
+  color: #e2e2e2;
+  }
 
-	nav ul li a, nav ul li {
+  #nav, #navul0, #navul1, #navul2 {
   color: #800080;
-	}
-
-	nav ul li ul {
-  background: #800080;
-	}
+  } 
 
 	#btnd {
   background-color: #800080;
