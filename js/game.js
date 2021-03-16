@@ -1,5 +1,5 @@
-var character = document.getElementById('character');
-var block = document.getElementById('block');
+let character = document.getElementById('character');
+let block = document.getElementById('block');
 var img = new Image();
 var canceljump = false;
 
@@ -23,10 +23,9 @@ function jump() {
 }
 
 var checkDead = setInterval(function() {
-  var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue('top'));
-  var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue('left'));
-  var blockRight = parseInt(window.getComputedStyle(block).getPropertyValue('right'));
-  var blockTop = parseInt(window.getComputedStyle(block).getPropertyValue('top'));
+  let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue('top'));
+  let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue('left'));
+  let blockRight = parseInt(window.getComputedStyle(block).getPropertyValue('right'));
   if ((blockLeft < 20 && blockLeft > 0 || blockRight < 20 && blockRight > 0) && characterTop >= 130) {
     canceljump = true;
     runchar.muted = true;

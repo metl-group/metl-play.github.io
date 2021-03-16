@@ -1,11 +1,11 @@
-var ded = new Audio('/audio/death.ogg'); //dead sound
-var runchar = new Audio('/audio/grass2.ogg'); //run sound
-var clkalert = new Audio('/audio/wood_click.ogg'); //alertbox ok button sound
-var jmp = new Audio('/audio/jump.ogg'); //jump sound
-var lnd = new Audio('/audio/land.ogg'); //land sound
-var lvup = new Audio('/audio/levelup.ogg'); //levelup sound
-var haunted = new Audio('/audio/growl4.ogg'); //score "666" sound
-var bkmsc = new Audio('/audio/pigstep.ogg'); //background music
+let ded = new Audio('/audio/death.ogg'); //dead sound
+let runchar = new Audio('/audio/grass2.ogg'); //run sound
+let clkalert = new Audio('/audio/wood_click.ogg'); //alertbox ok button sound
+let jmp = new Audio('/audio/jump.ogg'); //jump sound
+let lnd = new Audio('/audio/land.ogg'); //land sound
+let lvup = new Audio('/audio/levelup.ogg'); //levelup sound
+let haunted = new Audio('/audio/growl4.ogg'); //score "666" sound
+let bkmsc = new Audio('/audio/pigstep.ogg'); //background music
 
 function sound() {
   //preload the sounds
