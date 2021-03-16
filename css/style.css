@@ -157,6 +157,57 @@ nav ul li ul li {
   margin: 0px 0px 0px 0px;
 }
 
+@media (prefers-color-scheme: dark) {
+	html {
+  background: #36393f;
+  color: ##2d2d2d;
+	}
+
+	h1,h4 {
+  color: #e2e2e2;
+	}
+
+	nav {
+  background: #800080;
+	}
+
+	nav ul li {
+  color: #2d2d2d;
+	}
+
+	nav ul li:hover {
+  background: #800080;
+	}
+
+	nav ul li a, nav ul li {
+  color: #800080;
+	}
+
+	nav ul li ul {
+  background: #800080;
+	}
+
+	#btnd {
+  background-color: #800080;
+  color: #2d2d2d;
+	}
+
+	#btnd:hover {
+  background-color: grey;
+  color: #e2e2e2;
+	}
+
+	#btnw {
+  background-color: #800080;
+  color: #2d2d2d;
+	}
+
+	#btnw:hover {
+  background-color: grey;
+  color: #e2e2e2;
+	}
+}
+
 #game {
   width: 500px;
   height: 200px;
