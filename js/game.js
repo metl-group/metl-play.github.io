@@ -1,5 +1,4 @@
 let character = document.getElementById('character');
-let block = document.getElementById('block');
 var img = new Image();
 var canceljump = false;
 

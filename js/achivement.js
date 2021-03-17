@@ -1,3 +1,4 @@
+let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue('left'));
 var count = 0;
 var t;
 

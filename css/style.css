@@ -173,11 +173,15 @@ nav ul li ul li {
 
   #nav, #navul0, #navul1, #navul2 {
   color: #800080;
-  } 
+  }
+
+	a {
+	color: #9463FF;
+	}
 
 	#btnd {
-  background-color: #800080;
-  color: #2d2d2d;
+  background-color: #d300d3;
+  color: #e2e2e2;
 	}
 
 	#btnd:hover {
@@ -186,8 +190,8 @@ nav ul li ul li {
 	}
 
 	#btnw {
-  background-color: #800080;
-  color: #2d2d2d;
+  background-color: #d300d3;
+  color: #e2e2e2;
 	}
 
 	#btnw:hover {
@@ -260,15 +264,6 @@ nav ul li ul li {
   left: 15px;
   }
 }
-
-#block {
-	width: 20px;
-	height: 20px;
-	position: relative;
-	top: 90px;
-	left: 480px;
-	animation: block 1s infinite linear;
-	z-index: 4; }
 
 #block1 {
   width: 40px;
