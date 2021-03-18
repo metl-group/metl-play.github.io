@@ -7,10 +7,13 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="/js/jquery_3.5.1.js" async defer></script>
         <script src="/js/menu.js" async defer></script>
-	      <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
-          new Crate({
-            server: '763044232671526922', // MPD (metl_play development)
-            channel: '763044235049173076' // #allgemein
+	      <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async="true" defer="true">
+        new Crate({
+          server: '763044232671526922', // MPD (metl_play development)
+          channel: '763044235049173076', // #allgemein
+          location: ['bottom', 'right'],
+          glyph: ['/img/f7d78d0c7e6522ed296bfa315b3a1969.png', '100%'],
+          defer: true
           })
 				</script>
         <title>
