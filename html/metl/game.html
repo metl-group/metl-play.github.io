@@ -44,12 +44,12 @@
     <div id="counter">Score</div>
     <div id="game" onclick="jump()" src="/textures/background01.jpg">
       <div id="character"><img src="/textures/character01.png"></div>
-      <div id="block2"><img src="/textures/cloud01.png"></div>
-      <div id="block1"><img src="/textures/bush01.png"></div>
+      <div id="block2" style="display: none;"><img src="/textures/cloud01.png"></div>
+      <div id="block1" style="display: none;"><img src="/textures/bush01.png"></div>
       <div id="block" style="display: none;"><img src="/textures/enemy01.png"></div>
     </div>
   </div>
-  <script src="/js/start.js"async="true"></script> <!--Start the game by clicking on start-->
+  <script src="/js/start.js" defer="true"></script> <!--Start the game by clicking on start-->
   <script src="/js/game.js" defer="true"></script> <!--function will get called by start.js and don't start by it self-->
   <script src="/js/achivement.js" defer="true"></script> <!--function will get called by game.js and don't start by it self-->
   <script src="/js/sound.js" async="true"></script> <!--function will get called by game.js and don't start by it self-->
