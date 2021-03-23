@@ -1,10 +1,10 @@
-$(document).ready(function(e) {
+$(document).ready(function() {
 
         $('nav ul li').stop().hover(
-            function(e) {
+            function() {
                 $(this).children('ul').stop().slideDown(500);
             },
-            function(e) {
+            function() {
                 $(this).children('ul').stop().slideUp(500);
             }
         );
