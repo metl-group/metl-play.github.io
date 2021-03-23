@@ -26,20 +26,21 @@
   <nav id="nav">
     <ul>
 	    <a href="/index.html"><li id="home">Home</li></a>
-      <a href="metl_dev.html"><li>Zurück</li></a>
+      <a href="/html/metl/metl_dev.html"><li>Zurück</li></a>
+      <a href="/html/kontakt/credits.html"><li>Credits</li></a>
 	    <a href="/html/kontakt/kontakt.html"><li>Kontakt</li></a>
     </ul>
   </nav><br>
 
   <div id="con5"></div>
   <div id="con3">
-    <h1 id="conhead">Simple Game</h1>
-    <h3>Disclaimer</h3>
-    <h4>Sounds</h4>
-    <p>
-      The used sounds in this Game are from Minecraft and belong to Mojang,<br>
-      this Game is not an offical product by Mojang!
-    </p>
+	  <h1 id="conhead">Simple Game</h1>
+	  <h3>Credits</h3>
+	  <h4>Sounds</h4>
+	  <p>
+		  Some used sounds in this Game are from <a href="https://www.minecraft.net">Minecraft</a> and belong to Mojang.<br>
+		  This Game is not an offical product by Mojang!
+	  </p>
     <div id="startbtn"><button>Start Game</button></div>
     <div id="counter">Score</div>
     <div id="game" onclick="jump()" src="/textures/background01.jpg">
@@ -49,18 +50,18 @@
       <div id="block" style="display: none;"><img src="/textures/enemy01.png"></div>
     </div>
   </div>
-  <script src="/js/start.js" defer="true"></script> <!--Start the game by clicking on start-->
-  <script src="/js/game.js" defer="true"></script> <!--function will get called by start.js and don't start by it self-->
-  <script src="/js/achivement.js" defer="true"></script> <!--function will get called by game.js and don't start by it self-->
-  <script src="/js/sound.js" async="true"></script> <!--function will get called by game.js and don't start by it self-->
+  <script src="/js/start.js" defer></script> <!--Start the game by clicking on start-->
+  <script src="/js/game.js" defer></script> <!--function will get called by start.js and don't start by it self-->
+  <script src="/js/achivement.js" defer></script> <!--function will get called by game.js and don't start by it self-->
+  <script src="/js/sound.js" defer></script> <!--function will get called by game.js and don't start by it self-->
   <div id="con4">
     <h1>How to...</h1>
     <h2>play:</h2>
     <p id="conlwr">
       1. Click in the Box to jump<br>
       2. Red is an obstacle you have to avoid<br>
-      3. If you lose press F5 to restart<br>
-	    *if the game get laggy try ctrl+F5/Strg+F5
+      3. If you lose press F5 to reload<br>
+	    *when the game gets laggy try ctrl+F5/Strg+F5
     </p>
     <h2>setup the sound:</h2>
     <p>
@@ -69,11 +70,6 @@
       <img src="/img/exp01.png"><br>
       2nd Change from block to allow<br>
       <img src="/img/exp02.png"><br>
-    </p>
-    <h2>Textures by:</h2>
-    <p>
-      <a href="https://www.youtube.com/channel/UC5fF703FjcwwxauExxyCYSA">Rat Queen</a><br>
-      <a href="https://www.youtube.com/channel/UCHF-tooYc5ASiS-CIwJW1uA">Metl_Play</a>
     </p>
   </div>
 </body>

@@ -163,7 +163,11 @@ nav ul li ul li {
   color: #2d2d2d;
   }
 
-  #titel, #by, #conhead, #con, #concon, #quote, #conlwrhead, #conlwr, #qoute, #con3, #con4 {
+  #titel, #by, #conhead, #con, #concon, #quote, #conlwrhead, #conlwr, #con3, #con4 {
+  color: #e2e2e2;
+  }
+
+  .quote {
   color: #e2e2e2;
   }
 
@@ -263,43 +267,5 @@ nav ul li ul li {
   100% {
   top: 150px;
   left: 15px;
-  }
-}
-
-#block1 {
-  width: 40px;
-  height: 20px;
-  position: relative;
-  top: 110px;
-  left: 480px;
-  animation: block 1800ms infinite linear;
-  z-index: 3;
-}
-
-@keyframes block1 {
-  0% {
-  left: 480px;
-  }
-  100% {
-  left: -40px;
-  }
-}
-
-#block2 {
-  width: 40px;
-  height: 20px;
-  position: relative;
-  top: -20px;
-  left: 460px;
-  animation: block 2000ms infinite linear;
-  z-index: 2;
-}
-
-@keyframes block2 {
-  0% {
-  left: 480px;
-  }
-  100% {
-  left: -40px;
   }
 }

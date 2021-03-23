@@ -29,7 +29,6 @@ var checkDead = setInterval(function() {
     canceljump = true;
     runchar.muted = true;
     bkmsc.muted = true;
-    sound(lnd.muted = true);
     character.innerHTML = '<img src="' + img.src + '" />';
     block.style.animation = 'none';
     block1.style.animation = 'none';
@@ -40,6 +39,7 @@ var checkDead = setInterval(function() {
 
     if ((count - 1) > 0) {
       ded.play();
+      gameover.play();
       alert('G4m3 0ver Score: ' + (count - 1));
       sound(clkalert.play());
     }
@@ -52,4 +52,4 @@ var checkDead = setInterval(function() {
 },10);
 
 img.src = '/textures/character01.png';
-//Simple Game Textures made by https://www.youtube.com/channel/UC5fF703FjcwwxauExxyCYSA and edited by me(metl_play).
+//Simple Game Textures made by https://www.youtube.com/channel/UC5fF703FjcwwxauExxyCYSA and edited by metl_play.

@@ -6,6 +6,7 @@ let lnd = new Audio('/audio/land.ogg'); //land sound
 let lvup = new Audio('/audio/levelup.ogg'); //levelup sound
 let haunted = new Audio('/audio/growl4.ogg'); //score "666" sound
 let bkmsc = new Audio('/audio/pigstep.ogg'); //background music
+let gameover = new Audio('/audio/game_over.ogg'); //gameover sound by TheZero
 
 function sound() {
   //preload the sounds
@@ -17,6 +18,8 @@ function sound() {
   lvup.preload;
   haunted.preload;
   bkmsc.preload;
+  bkmsc.preload;
+  gameover.preload;
   //looped sounds need to get muted and loop set to false like runchar on dead
   runchar.loop = true;
   bkmsc.loop = true;
@@ -27,4 +30,5 @@ function sound() {
   lvup.volume = 0.5;
   clkalert.volume = 0.8;
   bkmsc.volume = 0.2;
+  gameover.volume = 0.5;
 }
