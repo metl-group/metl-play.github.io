@@ -1,4 +1,4 @@
-let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue('left'));
+//let lvup = lvup.play
 var count = 0;
 var t;
 
@@ -15,7 +15,7 @@ function lemath() {
 }
 
 function score(){
-  if ((count - 1) == 10) lvup.play();
+  if ((count - 1) == 10) sound(lvup.play());
   if ((count - 1) == 20) lvup.play();
   if ((count - 1) == 50) lvup.play();
   if ((count - 1) == 100) lvup.play();
