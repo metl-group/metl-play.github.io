@@ -129,11 +129,26 @@ nav ul li ul li {
   height: 450px;
 }
 
+#con03 {
+  text-align: left;
+  float: left;
+  padding: 15px;
+  width: 550px;
+  height: 450px;
+}
+
 #con4 {
   text-align: left;
   float: left;
   padding: 15px;
-  width: 30%;
+  width: 50%;
+  height: auto;
+}
+
+#con04 {
+  float: left;
+  padding: 15px;
+  width: 100%;
   height: auto;
 }
 
@@ -166,10 +181,10 @@ nav ul li ul li {
 .iframe-container iframe {
 	position: relative;
 	border: 0;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
+	left: 50px;
+	top: 50px;
+	height: 500px;
+	width: 550px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -178,7 +193,7 @@ nav ul li ul li {
   color: #2d2d2d;
   }
 
-  #titel, #by, #conhead, #con, #concon, #quote, #conlwrhead, #conlwr, #con3, #con4 {
+  #titel, #by, #conhead, #con, #concon, #quote, #conlwrhead, #conlwr, #conlwr01, #con3, #con03, #con4, #con4 {
   color: #e2e2e2;
   }
 
