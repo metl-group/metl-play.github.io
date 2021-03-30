@@ -157,6 +157,21 @@ nav ul li ul li {
   margin: 0px 0px 0px 0px;
 }
 
+.iframe-container {
+	overflow: hidden;
+	position: relative;
+	padding-top: 100%;
+}
+
+.iframe-container {
+	position: relative;
+	border: 0;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
 @media (prefers-color-scheme: dark) {
   #html {
   background-color: #36393f;
@@ -202,70 +217,4 @@ nav ul li ul li {
   background-color: grey;
   color: #e2e2e2;
 	}
-
-}
-
-#game {
-  width: 500px;
-  height: 200px;
-  background-image: url("/textures/background01.jpg");
-  border: 1px solid black;
-  position: absolute;
-  z-index: 1;
-}
-
-#character {
-  width: 20px;
-  height: 50px;
-  position: relative;
-  top: 150px;
-  left: 10px;
-  z-index: 5;
-}
-
-.animate {
-  animation: jump 500ms;
-}
-
-@keyframes jump {
-  0% {
-  top: 150px;
-  left: 10px;
-  }
-  20% {
-  top: 120px;
-  left: 15px;
-  }
-  30% {
-  top: 110px;
-  left: 20px;
-  }
-  45% {
-  top: 100px;
-  left: 25px;
-  }
-  55% {
-  top: 100px;
-  left: 25px;
-  }
-  70% {
-  top: 110px;
-  left: 25px;
-  }
-  80% {
-  top: 120px;
-  left: 25px;
-  }
-  85% {
-  top: 120px;
-  left: 25px;
-  }
-  95% {
-  top: 150px;
-  left: 20px;
-  }
-  100% {
-  top: 150px;
-  left: 15px;
-  }
 }
