@@ -25,10 +25,10 @@ function sound() {
   bkmsc.loop = true;
   //adjust the individual sound volume
   jmp.volume = 0.1;
-  lnd.volume = 0.3;
-  ded.volume = 0.5;
-  lvup.volume = 0.5;
+  lnd.volume = 0.2;
+  ded.volume = 0.3;
+  lvup.volume = 0.3;
   clkalert.volume = 0.8;
-  bkmsc.volume = 0.2;
-  gameover.volume = 0.5;
+  bkmsc.volume = 0.1;
+  gameover.volume = 0.2;
 }
