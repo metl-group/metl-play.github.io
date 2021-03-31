@@ -1,8 +1,9 @@
 let character = document.getElementById('character');
 var img = new Image();
-var canceljump = false;
+var canceljump = true;
+var count = 0;
+var t;
 
-//preload
 document.addEventListener('DOMContentLoaded', function() {
   sound();
 })
@@ -19,6 +20,28 @@ function jump() {
       lnd.play();
     }, 500);
   }
+}
+
+function achivement() {
+  lemath();
+  t = setTimeout(achivement, 1000, window);
+  score();
+}
+
+function lemath() {
+  count++;
+  var counter = document.getElementById('counter');
+  counter.innerHTML = 'Score: ' + (count - 1);
+}
+
+function score(){
+  if ((count - 1) == 10) lvup.play();
+  if ((count - 1) == 20) lvup.play();
+  if ((count - 1) == 50) lvup.play();
+  if ((count - 1) == 100) lvup.play();
+  if ((count - 1) == 200) lvup.play();
+  if ((count - 1) == 500) lvup.play();
+  if ((count - 1) == 666) haunted.play();
 }
 
 var checkDead = setInterval(function() {

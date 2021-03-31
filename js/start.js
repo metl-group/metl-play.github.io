@@ -9,6 +9,7 @@ let css = '#block { width: 20px; height: 20px; position: relative; top: 90px; le
 startbtn.addEventListener('click', function(){
 	setTimeout(start, 1000);
 	startbtn.style.visibility = 'hidden';
+	canceljump = false;
 	},
 	{once: true}
 )
