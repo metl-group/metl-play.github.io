@@ -1,7 +1,7 @@
 let character = document.getElementById('character');
-var img = new Image();
-var canceljump = true;
-var count = 0;
+let img = new Image();
+let canceljump = true;
+let count = 0;
 var t;
 
 document.addEventListener('DOMContentLoaded', function() {

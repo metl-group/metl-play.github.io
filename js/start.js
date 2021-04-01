@@ -13,7 +13,6 @@ startbtn.addEventListener('click', function(){
 	},
 	{once: true}
 )
-
 function start(){
 	character.innerHTML = '<img src="/textures/character01.gif" />'
 	enemy.style = '';

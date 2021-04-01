@@ -6,7 +6,6 @@ let lnd = new Audio('/audio/land.ogg'); //land sound
 let lvup = new Audio('/audio/levelup.ogg'); //levelup sound
 let haunted = new Audio('/audio/growl4.ogg'); //score "666" sound
 let bkmsc = new Audio('/audio/pigstep.ogg'); //background music
-let gameover = new Audio('/audio/game_over.ogg'); //gameover sound by TheZero
 
 function sound() {
   //preload the sounds
