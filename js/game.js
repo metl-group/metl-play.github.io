@@ -62,7 +62,6 @@ var checkDead = setInterval(function() {
 
     if ((count - 1) > 0) {
       ded.play();
-      gameover.play();
       alert('G4m3 0ver Score: ' + (count - 1));
       sound(clkalert.play());
     }
