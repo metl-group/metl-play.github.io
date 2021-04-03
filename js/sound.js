@@ -18,7 +18,6 @@ function sound() {
   haunted.preload;
   bkmsc.preload;
   bkmsc.preload;
-  gameover.preload;
   //looped sounds need to get muted and loop set to false like runchar on dead
   runchar.loop = true;
   bkmsc.loop = true;
@@ -29,5 +28,4 @@ function sound() {
   lvup.volume = 0.3;
   clkalert.volume = 0.8;
   bkmsc.volume = 0.1;
-  gameover.volume = 0.2;
 }
