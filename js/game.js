@@ -1,12 +1,15 @@
-let character = document.getElementById('character');
-let img = new Image();
-let canceljump = true;
-let count = 0;
-var t;
 
-document.addEventListener('DOMContentLoaded', function() {
-  sound();
-})
+function achivement() {
+  lemath();
+  t = setTimeout(achivement, 1000, window);
+  score();
+}
+
+function lemath() {
+  count++;
+  var counter = document.getElementById('counter');
+  counter.innerHTML = 'Score: ' + (count - 1);
+}
 
 function jump() {
 	if(canceljump){
@@ -20,18 +23,6 @@ function jump() {
       lnd.play();
     }, 500);
   }
-}
-
-function achivement() {
-  lemath();
-  t = setTimeout(achivement, 1000, window);
-  score();
-}
-
-function lemath() {
-  count++;
-  var counter = document.getElementById('counter');
-  counter.innerHTML = 'Score: ' + (count - 1);
 }
 
 function score(){
@@ -63,7 +54,7 @@ var checkDead = setInterval(function() {
     if ((count - 1) > 0) {
       ded.play();
       alert('G4m3 0ver Score: ' + (count - 1));
-      sound(clkalert.play());
+      clkalert.play();
     }
 
     runchar.loop = false;
@@ -74,4 +65,3 @@ var checkDead = setInterval(function() {
 },10);
 
 img.src = '/textures/character01.png';
-//Simple Game Textures made by https://www.youtube.com/channel/UC5fF703FjcwwxauExxyCYSA and edited by metl_play.

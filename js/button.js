@@ -1,3 +1,5 @@
+//the old way in changed themes with a button
+
 let d = document.getElementById('btnd');
 let w = document.getElementById('btnw');
 var wht = '#e2e2e2'; //white
