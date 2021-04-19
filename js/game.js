@@ -43,6 +43,8 @@ var checkDead = setInterval(function() {
     canceljump = true;
     runchar.muted = true;
     bkmsc.muted = true;
+    jmp.muted = true;
+    lnd.muted = true;
     character.innerHTML = '<img src="' + img.src + '" />';
     block.style.animation = 'none';
     block1.style.animation = 'none';
