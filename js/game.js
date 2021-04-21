@@ -61,6 +61,7 @@ var checkDead = setInterval(function() {
     bkmsc.loop = false;
     clearTimeout(t);
     counter.innerHTML = '*died* with a Score of: ' + (count - 1);
+    restartbtn.style.visibility = '';
   }
 },10);
 

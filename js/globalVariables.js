@@ -3,11 +3,12 @@ let enemy = document.getElementById('block');
 let bush = document.getElementById('block1');
 let cloud = document.getElementById('block2');
 let startButton = document.getElementById('startbtn');
+let restartButton = document.getElementById('restartbtn');
 
 //game
 let character = document.getElementById('character');
 let img = new Image();
-let count = 0;
+var count = 0;
 var canceljump = true;
 var t;
 

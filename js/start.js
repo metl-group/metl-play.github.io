@@ -4,16 +4,29 @@ let css = '#block { width: 20px; height: 20px; position: relative; top: 90px; le
 		stylee = document.createElement('style');
 
 document.addEventListener('DOMContentLoaded', function() {
+  restartbtn.style.visibility = 'hidden';
   sound();
 })
 
 startButton.addEventListener('click', function(){
+	runchar.loop = true;
+  bkmsc.loop = true;
+
 	startbtn.style.visibility = 'hidden';
 	setTimeout(start, 1000);
 	canceljump = false;
 	},
 	{once: true}
 )
+
+restartButton.addEventListener('click', function(){
+	count=0;
+	restartbtn.style.visibility = 'hidden';
+	setTimeout(restart, 1000);
+  canceljump = false;
+	}
+)
+
 function start(){
 	character.innerHTML = '<img src="/textures/character01.gif" />'
 	enemy.style = '';
@@ -25,4 +38,24 @@ function start(){
 	runchar.play();
 	bkmsc.play();
 	achivement();
+}
+
+function restart(){
+	character.innerHTML = '<img src="/textures/character01.gif" />'
+	enemy.style = '';
+	bush.style = '';
+	cloud.style = '';
+	head.appendChild(stylee);
+	stylee.type = 'text/css';
+	stylee.appendChild(document.createTextNode(css));
+	runchar.play();
+	bkmsc.play();
+	achivement();
+
+	runchar.loop = true;
+  bkmsc.loop = true;
+  runchar.muted = false;
+  bkmsc.muted = false;
+  jmp.muted = false;
+  lnd.muted = false;
 }
