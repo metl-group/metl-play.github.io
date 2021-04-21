@@ -20,5 +20,5 @@ function soundSetting() {
 	ded.volume = 0.3;
 	lvup.volume = 0.3;
 	clkalert.volume = 0.8;
-	bkmsc.volume = 0.1;
+	bkmsc.volume = 0.5;
 }
