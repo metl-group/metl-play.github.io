@@ -1,6 +1,5 @@
 
 function sound() {
-  soundSetting;
   //preload the sounds
   runchar.preload;
   jmp.preload;
@@ -11,6 +10,8 @@ function sound() {
   haunted.preload;
   bkmsc.preload;
   bkmsc.preload;
+  //sound_setup
+  soundSetting;
 }
 
 function soundSetting() {

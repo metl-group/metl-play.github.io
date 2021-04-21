@@ -12,9 +12,7 @@ function lemath() {
 }
 
 function jump() {
-	if(canceljump){
-		return
-	}
+	if(canceljump) return;
   if (character.classList != 'animate') {
     character.classList.add('animate');
     jmp.play();

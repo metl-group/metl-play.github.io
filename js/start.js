@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 startButton.addEventListener('click', function(){
-	setTimeout(start, 1000);
 	startbtn.style.visibility = 'hidden';
+	setTimeout(start, 1000);
 	canceljump = false;
 	},
 	{once: true}
