@@ -11,8 +11,8 @@ function lemath() {
 }
 
 function jump(){
-canceljump||"animate"!=character.classList&&(character.classList.add("animate");
-	jmp.play();
+canceljump||"animate"!=character.classList&&(character.classList.add("animate"),
+	jmp.play(),
 	setTimeout(function(){character.classList.remove("animate"),lnd.play()},500))
 }
 
