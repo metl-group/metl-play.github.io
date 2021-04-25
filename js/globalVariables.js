@@ -1,18 +1,18 @@
-//start
+//start.js
 let enemy = document.getElementById('block');
 let bush = document.getElementById('block1');
 let cloud = document.getElementById('block2');
 let startButton = document.getElementById('startbtn');
 let restartButton = document.getElementById('restartbtn');
 
-//game
+//game.js
 let character = document.getElementById('character');
 let img = new Image();
 var count = 0;
 var canceljump = true;
 var t;
 
-//sound
+//sound.js
 let ded = new Audio('/audio/death.ogg'); //dead sound
 let runchar = new Audio('/audio/grass2.ogg'); //run sound
 let clkalert = new Audio('/audio/wood_click.ogg'); //alertbox ok button sound

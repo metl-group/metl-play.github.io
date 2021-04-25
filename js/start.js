@@ -9,26 +9,25 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 startButton.addEventListener('click', function(){
-	runchar.loop = true;
-  bkmsc.loop = true;
+	runchar.loop=!0;
+  bkmsc.loop=!0;
 
 	startbtn.style.visibility = 'hidden';
-	setTimeout(start, 1000);
-	canceljump = false;
+	setTimeout(start, 1e3);
+	canceljump=!1;
 	},
-	{once: true}
-)
+	{once:!0})
 
 restartButton.addEventListener('click', function(){
 	count=0;
 	restartbtn.style.visibility = 'hidden';
-	setTimeout(restart, 1000);
-  canceljump = false;
+	setTimeout(restart, 1e3);
+  canceljump=!1;
 	}
 )
 
 function start(){
-	character.innerHTML = '<img src="/textures/character01.gif" />'
+	character.innerHTML = '<img src="/textures/character01.gif"/>';
 	enemy.style = '';
 	bush.style = '';
 	cloud.style = '';
@@ -41,7 +40,7 @@ function start(){
 }
 
 function restart(){
-	character.innerHTML = '<img src="/textures/character01.gif" />'
+	character.innerHTML = '<img src="/textures/character01.gif"/>';
 	enemy.style = '';
 	bush.style = '';
 	cloud.style = '';
@@ -51,11 +50,10 @@ function restart(){
 	runchar.play();
 	bkmsc.play();
 	achivement();
-
-	runchar.loop = true;
-  bkmsc.loop = true;
-  runchar.muted = false;
-  bkmsc.muted = false;
-  jmp.muted = false;
-  lnd.muted = false;
+	runchar.loop=!0;
+  bkmsc.loop=!0;
+  runchar.muted=!1;
+  bkmsc.muted=!1;
+  jmp.muted=!1;
+  lnd.muted=!1;
 }
