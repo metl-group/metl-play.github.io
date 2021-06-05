@@ -1,7 +1,7 @@
 html {
   font-family: Arial, Calibri;
-  background: #e2e2e2;
-  color: #36393f;
+  background: #E2E2E2;
+  color: #36393F;
   margin: 0;
   padding: 0;
 }
@@ -12,13 +12,13 @@ body {
 }
 
 h1,h4 {
-  color: #2d2d2d;
+  color: #2D2D2D;
 }
 
 nav {
   width: 100%;
   height: 50px;
-  background: #d300d3;
+  background: #D300D3;
   display: block;
 }
 
@@ -36,7 +36,7 @@ nav ul li {
   border-right: 1px solid grey;
   text-align: center;
   float: left;
-  color: #e2e2e2;
+  color: #E2E2E2;
 }
 
 nav ul li {
@@ -52,7 +52,7 @@ nav ul li:hover {
 }
 
 nav ul li a, nav ul li {
-  color: #fff;
+  color: #FFF;
   text-decoration: none;
   letter-spacing: 1px;
 }
@@ -61,7 +61,7 @@ nav ul li ul {
   position: absolute;
   top: 0px;
   left: -1px;
-  background: #d300d3;
+  background: #D300D3;
   display: none;
 }
 
@@ -71,36 +71,36 @@ nav ul li ul li {
 }
 
 #btnd {
-  background-color: #d300d3;
+  background-color: #D300D3;
   position: relative;
   top: -15px;
   border: none;
   width: 100%;
   height: 50px;
   font-size: 16px;
-  color: #e2e2e2;
+  color: #E2E2E2;
 }
 
 #btnd:hover {
   background-color: grey;
-  color: #2d2d2d;
+  color: #2D2D2D;
   cursor: pointer;
 }
 
 #btnw {
-  background-color: #d300d3;
+  background-color: #D300D3;
   position: relative;
   top: -15px;
   border: none;
   width: 100%;
   height: 50px;
   font-size: 16px;
-  color: #e2e2e2;
+  color: #E2E2E2;
 }
 
 #btnw:hover {
   background-color: grey;
-  color: #2d2d2d;
+  color: #2D2D2D;
   cursor: pointer;
 }
 
@@ -189,20 +189,20 @@ nav ul li ul li {
 
 @media (prefers-color-scheme: dark) {
   #html {
-  background-color: #36393f;
-  color: #2d2d2d;
+  background-color: #36393F;
+  color: #2D2D2D;
   }
 
   #titel, #by, #conhead, #con, #concon, #quote, #conlwrhead, #conlwr, #conlwr01, #con3, #con03, #con4, #con4 {
-  color: #e2e2e2;
+  color: #E2E2E2;
   }
 
   .quote {
-  color: #e2e2e2;
+  color: #E2E2E2;
   }
 
   h1, h2, h3, h4 {
-  color: #e2e2e2;
+  color: #E2E2E2;
   }
 
   #nav, #navul0, #navul1, #navul2 {
@@ -214,22 +214,22 @@ nav ul li ul li {
 	}
 
 	#btnd {
-  background-color: #d300d3;
-  color: #e2e2e2;
+  background-color: #D300D3;
+  color: #E2E2E2;
 	}
 
 	#btnd:hover {
   background-color: grey;
-  color: #e2e2e2;
+  color: #E2E2E2;
 	}
 
 	#btnw {
   background-color: #d300d3;
-  color: #e2e2e2;
+  color: #E2E2E2;
 	}
 
 	#btnw:hover {
   background-color: grey;
-  color: #e2e2e2;
+  color: #E2E2E2;
 	}
 }

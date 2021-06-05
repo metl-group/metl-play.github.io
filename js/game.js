@@ -1,13 +1,13 @@
 
 function achivement(){
-  lemath();
-  t = setTimeout(achivement, 1e3, window);
-  score()
+	lemath();
+	t = setTimeout(achivement, 1e3, window);
 }
 
 function lemath() {
-  count++;
-  document.getElementById("counter").innerHTML="Score: "+(count-1)
+	count++;
+	score();
+	document.getElementById("counter").innerHTML="Score: "+(count-1)
 }
 
 function jump(){
@@ -27,7 +27,9 @@ function score(){
 }
 
 var checkDead=setInterval(function(){
-	((parseInt(window.getComputedStyle(block).getPropertyValue('left')) <20 && parseInt(window.getComputedStyle(block).getPropertyValue('left')) >0 || parseInt(window.getComputedStyle(block).getPropertyValue('right')) <20 && parseInt(window.getComputedStyle(block).getPropertyValue('right')) >0) && parseInt(window.getComputedStyle(character).getPropertyValue('top')) >=130) &&(
+	((parseInt(window.getComputedStyle(block).getPropertyValue('left')) <20 && parseInt(window.getComputedStyle(block).getPropertyValue('left')) >0 ||
+	parseInt(window.getComputedStyle(block).getPropertyValue('right')) <20 && parseInt(window.getComputedStyle(block).getPropertyValue('right')) >0) &&
+	parseInt(window.getComputedStyle(character).getPropertyValue('top')) >=130) &&(
 	canceljump=!0,
 	runchar.muted=!0,
 	bkmsc.muted=!0,

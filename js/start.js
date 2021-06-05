@@ -4,13 +4,13 @@ let css = '#block { width: 20px; height: 20px; position: relative; top: 90px; le
 		stylee = document.createElement('style');
 
 document.addEventListener('DOMContentLoaded', function() {
-  restartbtn.style.visibility = 'hidden';
-  sound();
+	restartbtn.style.visibility = 'hidden';
+	sound();
 })
 
 startButton.addEventListener('click', function(){
 	runchar.loop=!0;
-  bkmsc.loop=!0;
+	bkmsc.loop=!0;
 
 	startbtn.style.visibility = 'hidden';
 	setTimeout(start, 1e3);
@@ -22,7 +22,7 @@ restartButton.addEventListener('click', function(){
 	count=0;
 	restartbtn.style.visibility = 'hidden';
 	setTimeout(restart, 1e3);
-  canceljump=!1;
+	canceljump=!1;
 	}
 )
 
@@ -51,9 +51,9 @@ function restart(){
 	bkmsc.play();
 	achivement();
 	runchar.loop=!0;
-  bkmsc.loop=!0;
-  runchar.muted=!1;
-  bkmsc.muted=!1;
-  jmp.muted=!1;
-  lnd.muted=!1;
+	bkmsc.loop=!0;
+	runchar.muted=!1;
+	bkmsc.muted=!1;
+	jmp.muted=!1;
+	lnd.muted=!1;
 }
