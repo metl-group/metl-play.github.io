@@ -11,7 +11,7 @@ function lemath() {
 }
 
 function jump(){
-canceljump||"animate"!=character.classList&&(character.classList.add("animate"),
+	canceljump||"animate"!=character.classList&&(character.classList.add("animate"),
 	jmp.play(),
 	setTimeout(function(){character.classList.remove("animate"),lnd.play()},500))
 }
@@ -48,7 +48,7 @@ var checkDead=setInterval(function(){
 	block.style.display="none",
 	block1.style.display="none",
 	block2.style.display="none",
-	((count-1)>0) = gameover(),
+	count-1>0 = gameover(),
 	runchar.loop=!1,
 	bkmsc.loop=!1,
 	clearTimeout(t),
