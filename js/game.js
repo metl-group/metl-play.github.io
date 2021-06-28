@@ -44,8 +44,7 @@ var checkDead=setInterval(function(){
 	block2.style.display="none",
 	count-1>0 && (
 		ded.play(),
-		setTimeout((),500),
-		alert("G4m3 0ver Score: "+(count-1)),
+		setTimeout(alert("G4m3 0ver Score: "+(count-1)),500),
 		clkalert.play()),
 	runchar.loop=!1,
 	bkmsc.loop=!1,
