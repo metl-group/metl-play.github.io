@@ -29,7 +29,7 @@ function score(){
 function gameover(){
 	ded.play();
 	alert("G4m3 0ver Score: "+(count-1));
-	clkalert.play());
+	clkalert.play();
 }
 
 var checkDead=setInterval(function(){
