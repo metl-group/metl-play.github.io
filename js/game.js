@@ -27,11 +27,9 @@ function score(){
 }
 
 function gameover(){
-	if ((count-1)>=1) {
 	ded.play();
 	alert("G4m3 0ver Score: "+(count-1));
 	clkalert.play());
-	}
 }
 
 var checkDead=setInterval(function(){
@@ -50,7 +48,7 @@ var checkDead=setInterval(function(){
 	block.style.display="none",
 	block1.style.display="none",
 	block2.style.display="none",
-	gameover();
+	if count-1>0 = gameover();
 	runchar.loop=!1,
 	bkmsc.loop=!1,
 	clearTimeout(t),
