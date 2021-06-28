@@ -27,10 +27,10 @@ function score(){
 }
 
 function gameover(){
-count-1>0 && (
-ded.play(),
-alert("G4m3 0ver Score: "+(count-1)),
-clkalert.play()),
+	if count-1>0 && (
+	ded.play(),
+	alert("G4m3 0ver Score: "+(count-1)),
+	clkalert.play()),
 }
 
 var checkDead=setInterval(function(){
