@@ -26,12 +26,6 @@ function score(){
 	count-1==666&&haunted.play()
 }
 
-function gameover(){
-	ded.play();
-	alert("G4m3 0ver Score: "+(count-1));
-	clkalert.play();
-}
-
 var checkDead=setInterval(function(){
 	((parseInt(window.getComputedStyle(block).getPropertyValue('left')) <20 && parseInt(window.getComputedStyle(block).getPropertyValue('left')) >0 ||
 	parseInt(window.getComputedStyle(block).getPropertyValue('right')) <20 && parseInt(window.getComputedStyle(block).getPropertyValue('right')) >0) &&
@@ -48,7 +42,11 @@ var checkDead=setInterval(function(){
 	block.style.display="none",
 	block1.style.display="none",
 	block2.style.display="none",
-	(count-1)>0 = gameover(),
+	count-1>0 && (
+		ded.play(),
+		setTimeout=0.5
+		alert("G4m3 0ver Score: "+(count-1)),
+		clkalert.play()),
 	runchar.loop=!1,
 	bkmsc.loop=!1,
 	clearTimeout(t),
