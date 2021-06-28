@@ -48,7 +48,7 @@ var checkDead=setInterval(function(){
 	block.style.display="none",
 	block1.style.display="none",
 	block2.style.display="none",
-	if count-1>0 = gameover(),
+	if ((count-1)>0) = gameover(),
 	runchar.loop=!1,
 	bkmsc.loop=!1,
 	clearTimeout(t),
