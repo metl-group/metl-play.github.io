@@ -4,7 +4,7 @@ function achivement(){
 	t = setTimeout(achivement, 1e3, window);
 }
 
-function lemath() {
+function lemath(){
 	count++;
 	score();
 	document.getElementById("counter").innerHTML="Score: "+(count-1)
