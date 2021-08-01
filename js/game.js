@@ -11,7 +11,7 @@ function lemath(){
 }
 
 function jump(){
-canceljump||"animate"!=character.classList&&(character.classList.add("animate"),
+	canceljump||"animate"!=character.classList&&(character.classList.add("animate"),
 	jmp.play(),
 	setTimeout(function(){character.classList.remove("animate"),lnd.play()},500))
 }
@@ -42,9 +42,9 @@ var checkDead=setInterval(function(){
 	block.style.display="none",
 	block1.style.display="none",
 	block2.style.display="none",
-		count-1>0 && (
+	count-1>0 && (
 		ded.play(),
-		alert("G4m3 0ver Score: "+(count-1)),
+		setTimeout(alert("G4m3 0ver Score: "+(count-1)),500),
 		clkalert.play()),
 	runchar.loop=!1,
 	bkmsc.loop=!1,
