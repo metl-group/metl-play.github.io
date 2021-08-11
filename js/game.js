@@ -42,13 +42,13 @@ var checkDead=setInterval(function(){
 	block.style.display="none",
 	block1.style.display="none",
 	block2.style.display="none",
+	runchar.loop=!1,
+	bkmsc.loop=!1,
+	clearTimeout(t),
 	count-1>0 && (
 		ded.play(),
 		setTimeout(alert("G4m3 0ver Score: "+(count-1)),500),
 		clkalert.play()),
-	runchar.loop=!1,
-	bkmsc.loop=!1,
-	clearTimeout(t),
 	counter.innerHTML='*died* with a Score of '+(count-1),
 	restartbtn.style.visibility='')
 },10);
